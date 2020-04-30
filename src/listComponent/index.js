@@ -44,7 +44,7 @@ const ListData = ({ data }) => {
           ]}
         >
           <Skeleton title={false} loading={false} active>
-            <Checkbox checked={item.done} />
+            <Checkbox defaultChecked={item.done} />
             <List.Item.Meta title={item.title} />
             <div>{item.description}</div>
           </Skeleton>
